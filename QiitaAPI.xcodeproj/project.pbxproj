@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91618C68277ADE3B00D98D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C67277ADE3B00D98D44 /* AppDelegate.swift */; };
+		91618C6A277ADE3B00D98D44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C69277ADE3B00D98D44 /* SceneDelegate.swift */; };
+		91618C6C277ADE3B00D98D44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C6B277ADE3B00D98D44 /* ViewController.swift */; };
+		91618C6F277ADE3B00D98D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91618C6D277ADE3B00D98D44 /* Main.storyboard */; };
+		91618C71277ADE3C00D98D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91618C70277ADE3C00D98D44 /* Assets.xcassets */; };
+		91618C74277ADE3C00D98D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91618C72277ADE3C00D98D44 /* LaunchScreen.storyboard */; };
+		91618C7D277ADE6200D98D44 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 91618C7C277ADE6200D98D44 /* RxCocoa */; };
+		91618C7F277ADE6200D98D44 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 91618C7E277ADE6200D98D44 /* RxRelay */; };
+		91618C81277ADE6200D98D44 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91618C80277ADE6200D98D44 /* RxSwift */; };
+		91618C84277ADE7F00D98D44 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91618C83277ADE7F00D98D44 /* APIKit */; };
+		91618C86277ADE9900D98D44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C85277ADE9900D98D44 /* Model.swift */; };
+		91618C88277AE33E00D98D44 /* FetchQiitaArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C87277AE33E00D98D44 /* FetchQiitaArticleRequest.swift */; };
+		91618C8B277AE60900D98D44 /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C8A277AE60900D98D44 /* DecodableDataParser.swift */; };
+		91618C8D277AEBFF00D98D44 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91618C8C277AEBFF00D98D44 /* QiitaAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91618C64277ADE3B00D98D44 /* QiitaAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91618C67277ADE3B00D98D44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91618C69277ADE3B00D98D44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		91618C6B277ADE3B00D98D44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91618C6E277ADE3B00D98D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91618C70277ADE3C00D98D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91618C73277ADE3C00D98D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91618C75277ADE3C00D98D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91618C85277ADE9900D98D44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		91618C87277AE33E00D98D44 /* FetchQiitaArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchQiitaArticleRequest.swift; sourceTree = "<group>"; };
+		91618C8A277AE60900D98D44 /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
+		91618C8C277AEBFF00D98D44 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91618C61277ADE3B00D98D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91618C84277ADE7F00D98D44 /* APIKit in Frameworks */,
+				91618C81277ADE6200D98D44 /* RxSwift in Frameworks */,
+				91618C7F277ADE6200D98D44 /* RxRelay in Frameworks */,
+				91618C7D277ADE6200D98D44 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91618C5B277ADE3B00D98D44 = {
+			isa = PBXGroup;
+			children = (
+				91618C66277ADE3B00D98D44 /* QiitaAPI */,
+				91618C65277ADE3B00D98D44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91618C65277ADE3B00D98D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91618C64277ADE3B00D98D44 /* QiitaAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91618C66277ADE3B00D98D44 /* QiitaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				91618C89277AE5DB00D98D44 /* API */,
+				91618C67277ADE3B00D98D44 /* AppDelegate.swift */,
+				91618C69277ADE3B00D98D44 /* SceneDelegate.swift */,
+				91618C6B277ADE3B00D98D44 /* ViewController.swift */,
+				91618C6D277ADE3B00D98D44 /* Main.storyboard */,
+				91618C70277ADE3C00D98D44 /* Assets.xcassets */,
+				91618C72277ADE3C00D98D44 /* LaunchScreen.storyboard */,
+				91618C75277ADE3C00D98D44 /* Info.plist */,
+			);
+			path = QiitaAPI;
+			sourceTree = "<group>";
+		};
+		91618C89277AE5DB00D98D44 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				91618C8C277AEBFF00D98D44 /* QiitaAPI.swift */,
+				91618C85277ADE9900D98D44 /* Model.swift */,
+				91618C87277AE33E00D98D44 /* FetchQiitaArticleRequest.swift */,
+				91618C8A277AE60900D98D44 /* DecodableDataParser.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91618C63277ADE3B00D98D44 /* QiitaAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91618C78277ADE3C00D98D44 /* Build configuration list for PBXNativeTarget "QiitaAPI" */;
+			buildPhases = (
+				91618C60277ADE3B00D98D44 /* Sources */,
+				91618C61277ADE3B00D98D44 /* Frameworks */,
+				91618C62277ADE3B00D98D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiitaAPI;
+			packageProductDependencies = (
+				91618C7C277ADE6200D98D44 /* RxCocoa */,
+				91618C7E277ADE6200D98D44 /* RxRelay */,
+				91618C80277ADE6200D98D44 /* RxSwift */,
+				91618C83277ADE7F00D98D44 /* APIKit */,
+			);
+			productName = QiitaAPI;
+			productReference = 91618C64277ADE3B00D98D44 /* QiitaAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91618C5C277ADE3B00D98D44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					91618C63277ADE3B00D98D44 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 91618C5F277ADE3B00D98D44 /* Build configuration list for PBXProject "QiitaAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91618C5B277ADE3B00D98D44;
+			packageReferences = (
+				91618C7B277ADE6200D98D44 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				91618C82277ADE7F00D98D44 /* XCRemoteSwiftPackageReference "APIKit" */,
+			);
+			productRefGroup = 91618C65277ADE3B00D98D44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91618C63277ADE3B00D98D44 /* QiitaAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91618C62277ADE3B00D98D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91618C74277ADE3C00D98D44 /* LaunchScreen.storyboard in Resources */,
+				91618C71277ADE3C00D98D44 /* Assets.xcassets in Resources */,
+				91618C6F277ADE3B00D98D44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91618C60277ADE3B00D98D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91618C88277AE33E00D98D44 /* FetchQiitaArticleRequest.swift in Sources */,
+				91618C6C277ADE3B00D98D44 /* ViewController.swift in Sources */,
+				91618C8B277AE60900D98D44 /* DecodableDataParser.swift in Sources */,
+				91618C68277ADE3B00D98D44 /* AppDelegate.swift in Sources */,
+				91618C8D277AEBFF00D98D44 /* QiitaAPI.swift in Sources */,
+				91618C6A277ADE3B00D98D44 /* SceneDelegate.swift in Sources */,
+				91618C86277ADE9900D98D44 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91618C6D277ADE3B00D98D44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91618C6E277ADE3B00D98D44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91618C72277ADE3C00D98D44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91618C73277ADE3C00D98D44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91618C76277ADE3C00D98D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91618C77277ADE3C00D98D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91618C79277ADE3C00D98D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q968WG6C3Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QiitaAPI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juriOhto.QiitaAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91618C7A277ADE3C00D98D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q968WG6C3Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QiitaAPI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juriOhto.QiitaAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91618C5F277ADE3B00D98D44 /* Build configuration list for PBXProject "QiitaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91618C76277ADE3C00D98D44 /* Debug */,
+				91618C77277ADE3C00D98D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91618C78277ADE3C00D98D44 /* Build configuration list for PBXNativeTarget "QiitaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91618C79277ADE3C00D98D44 /* Debug */,
+				91618C7A277ADE3C00D98D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91618C7B277ADE6200D98D44 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		91618C82277ADE7F00D98D44 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91618C7C277ADE6200D98D44 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91618C7B277ADE6200D98D44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		91618C7E277ADE6200D98D44 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91618C7B277ADE6200D98D44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		91618C80277ADE6200D98D44 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91618C7B277ADE6200D98D44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		91618C83277ADE7F00D98D44 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91618C82277ADE7F00D98D44 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 91618C5C277ADE3B00D98D44 /* Project object */;
+}
